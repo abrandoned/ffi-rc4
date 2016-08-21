@@ -1,8 +1,7 @@
 require "ffi"
+require "ffi-rc4/version"
 
 module FFI_RC4
-  VERSION = "0.1.0"
-
   extend FFI::Library
   if FFI::Platform.windows?
     ffi_lib 'libeay32', 'ssleay32'
