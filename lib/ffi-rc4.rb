@@ -67,4 +67,8 @@ module FFI_RC4
   def self.encrypt_and_base64(text, secret = ::FFI_RC4.default)
     ::Base64::urlsafe_encode64(encrypt(text, secret))
   end
+
+  class << self
+    alias_method :encrypt_base64, :encrypt_and_base64
+  end
 end
