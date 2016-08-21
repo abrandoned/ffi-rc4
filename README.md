@@ -19,8 +19,23 @@ Or install it yourself as:
     $ gem install ffi-rc4
 
 ## Usage
+```ruby
+require 'ffi-rc4'
+FFI_RC4.default = "secret" # setup a default secret if desired, each call takes a secret as well
 
-TODO: Write usage instructions here
+# get back base64 encoded bytes
+encrypted_base64 = FFI_RC4::encrypt_base64("hello")
+text = FFI_RC4::decrypt_base64("hello")
+
+# or get back bytes
+encrypted = FFI_RC4::encrypt("hello")
+text = FFI_RC4::decrypt("hello")
+
+# or send secret with call
+encrypted_base64 = FFI_RC4::encrypt_base64("hello", "other_secret")
+text = FFI_RC4::decrypt_base64("hello", "other_secret")
+
+```
 
 ## Development
 
