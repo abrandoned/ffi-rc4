@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{ OpenSSL/RC4 through FFI }
   spec.description   = %q{ OpenSSL/RC4 through FFI }
-  spec.homepage      = "https://github.com/abrandoned"
+  spec.homepage      = "https://github.com/abrandoned/ffi-rc4"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
