@@ -1,6 +1,6 @@
 # FFI::RC4
 
-A simple FFI wrapper around openssl RC4 for unsafe RC4 encryption, *do not use for production systems if you expect anything to be considered "secure", use a better algorithm like AES-256-CBC*
+A simple FFI wrapper around openssl RC4 for unsafe RC4 encryption, **do not use for production systems if you expect anything to be considered "secure", use a better algorithm like AES-256-CBC**
 
 ## Installation
 
