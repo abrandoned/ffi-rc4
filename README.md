@@ -1,8 +1,6 @@
-# Ffi::Rc4
+# FFI::RC4
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ffi/rc4`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A simple FFI wrapper around openssl RC4 for unsafe RC4 encryption, *do not use for production systems if you expect anything to be considered "secure", use a better algorithm like AES-256-CBC*
 
 ## Installation
 
